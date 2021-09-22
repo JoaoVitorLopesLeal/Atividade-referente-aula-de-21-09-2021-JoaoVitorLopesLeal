@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Ex 14</title>
+    </head>
+    <body>
+        <script lang="javascript">
+            var A, B, C, hipotenusa, cateto1, cateto2;
+
+            A = parseFloat(window.prompt("Digite o valor de A:"))
+            B = parseFloat(window.prompt("Digite o valor de B:"))
+            C = parseFloat(window.prompt("Digite o valor de C:"))
+
+            if(A < C && B < C)
+            {
+                cateto1 = A;
+                cateto2 = B;
+                hipotenusa = C;
+            }
+            else if(A < B && C < B)
+            {
+                cateto1 = A;
+                cateto2 = C;
+                hipotenusa = B;
+            }
+            else
+            {
+                cateto1 = B;
+                cateto2 = C;
+                hipotenusa= A;
+            }
+
+            if( (Math.pow(cateto1,2) + Math.pow(cateto2,2)) == Math.pow(hipotenusa,2) )
+                document.write("Isso é um triangulo retangulo");
+            else
+                document.write("Isso NÃO é um triangulo retangulo");
+
+        </script>
+    </body>
+</html>

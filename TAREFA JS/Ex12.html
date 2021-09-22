@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Ex 12</title>
+    </head>
+    <body>
+        <script lang="javascript">
+            var altura, peso, R;
+
+            peso= parseFloat(window.prompt("Qual o seu peso? "))
+            altura = parseFloat(window.prompt("Qual a sua altura? "))
+
+            R = peso/Math.pow(altura, 2)
+
+            if(R < 20)
+                document.write("<h1>Abaixo do peso</h1>")
+            else if (R < 25)
+                document.write("<h1>Peso ideal</h1>")
+            else
+                document.write("<h1>Acima do peso</h1>")
+
+        </script>
+    </body>
+</html>

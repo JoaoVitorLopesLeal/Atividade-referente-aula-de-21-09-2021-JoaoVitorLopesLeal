@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Ex 18</title>
+    </head>
+    <body>
+        <table border="1">
+        <script lang="javascript">
+            var col, linha, multp,ii, jj;
+            jj=0;
+
+            for(linha=1; linha<=4; ++linha)
+            {
+                document.write('<tr>')
+                for (col = 1; col <=5; col++) 
+                {
+                    jj = jj+1;
+                    document.write('<td>')
+                    for (ii = 0; ii <= 10; ii++) {    
+                        multp =jj*ii;
+                        document.write(jj,"*",ii," = ",multp,"<br>")  
+                    }
+                    document.write('</td>')
+                        
+                }
+                document.write('</tr>')
+            }    
+        </script>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Ex 15</title>
+    </head>
+    <body>
+        <script lang="javascript">
+            const num = [];
+            var maior;
+
+            num[0] = parseFloat(window.prompt("Digite o 1º numero:"))
+            num[1] = 0;
+
+            while(num[0]>num[1]){
+                num[1] = parseFloat(window.prompt("Digite o 2º numero:"))    
+            }
+
+            maior = Math.max(num[0], num[1]);
+
+            document.write("<h1>O maior numero é ",maior,"</h1>")            
+
+        </script>
+    </body>
+</html>
